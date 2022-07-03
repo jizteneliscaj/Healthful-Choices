@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Healthful Choices</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main1">
+            <div class="container1">
+                <div class="navbar">
+                    <img src="images/hcHeader.jpg" class="logo">
+                    <nav>
+                        <ul id = "menuList">
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="services.html"><u>SERVICES</u></a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                    <img src="images/menuLogo.png" class="menu-icon" onclick="togglemenu()">
+                </div>
+            </div>
+            <div class="container2">
+                <div class="pane">
+                    <div class = "container1">
+                        <div class="col">
+                            <h1>HEALTHFUL CHOICES SERVICES</h1>
+                            <br><br>
+                            <h3>Our Services include:</h3>
+                            <br>
+                            <h3>Delivery</h3>
+                            <h3>- Same Day Delivery</h3>
+                            <h3>- Next Day Delivery</h3>
+                            <br>
+                            <h3>Payment</h3>
+                            <h3>- Debit or Credit Card</h3>
+                            <h3>- E-wallet</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+            function togglemenu(){
+                if(menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight = "130px"
+                }
+                else
+                {
+                    menuList.style.maxHeight = "0px"
+                }
+            }
+        </script>
+    </body>
+</html>

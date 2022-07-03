@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Healthful Choices</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main1">
+            <div class="container1">
+                <div class="navbar">
+                    <img src="images/hcHeader.jpg" class="logo">
+                    <nav>
+                        <ul id = "menuList">
+                            <li><a href="index.html"><u>HOME</u></a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="services.html">SERVICES</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                    <img src="images/menuLogo.png" class="menu-icon" onclick="togglemenu()">
+                </div>
+            </div>
+            <div class="container3">
+                <div class="navbar2">
+                    <nav>
+                        <ul id = "menuList">
+                            <li><a href="index.html"><u>Vitamins/Supplements</u></a></li>
+                            <li><a href="salads.html">Vegetable Salad</a></li>
+                            <li><a href="farm.html">Farm Quality Food Products</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="container4">
+                <div class="rows">
+                    <div class="column">
+                        <img src="images/Goli.png" alt="Goli" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <img src="images/Centrum.png" alt="Centrum" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <img src="images/Enervon.png" alt="Enervon" style="width:100%">
+                    </div>
+                </div>
+                <div class="rows">
+                    <div class="column">
+                        <img src="images/PotenCee.png" alt="PotenCee" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <img src="images/Filler.jpg" alt="Filler" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <img src="images/Filler.jpg" alt="Filler" style="width:100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+            function togglemenu(){
+                if(menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight = "130px"
+                }
+                else
+                {
+                    menuList.style.maxHeight = "0px"
+                }
+            }
+        </script>
+    </body>
+</html>

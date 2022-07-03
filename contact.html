@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Healthful Choices</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main1">
+            <div class="container1">
+                <div class="navbar">
+                    <img src="images/hcHeader.jpg" class="logo">
+                    <nav>
+                        <ul id = "menuList">
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="services.html">SERVICES</a></li>
+                            <li><a href="contact.html"><u>CONTACT</u></a></li>
+                        </ul>
+                    </nav>
+                    <img src="images/menuLogo.png" class="menu-icon" onclick="togglemenu()">
+                </div>
+            </div>
+            <div class="container2">
+                <div class="pane">
+                    <div class = "container1">
+                        <div class="col">
+                            <h1>Wanna Contact Healthful Choices?</h1>
+                            <br><br>
+                            <h3>All successful partnerships start with a great conversation. We can't wait to share one with you.</h3>
+                            <br>
+                            <h3>Contact 09123456789</h3>
+                            <h3>We answer phones week days between 9am and 5pm</h3>
+                            <br>
+                            <h3>Let's chat! HealthfulChoices@gmail.com</h3>
+                            <h3>Email your heart out, we are online all day</h3>
+                            <br>
+                            <h3>Get Directions</h3>
+                            <h3>Our not-so-secret physical shop is can be found at Malate Manila 123</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+            function togglemenu(){
+                if(menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight = "130px"
+                }
+                else
+                {
+                    menuList.style.maxHeight = "0px"
+                }
+            }
+        </script>
+    </body>
+</html>

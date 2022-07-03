@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Healthful Choices</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main1">
+            <div class="container1">
+                <div class="navbar">
+                    <img src="images/hcHeader.jpg" class="logo">
+                    <nav>
+                        <ul id = "menuList">
+                            <li><a href="index.html"><u>HOME</u></a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="services.html">SERVICES</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                    <img src="images/menuLogo.png" class="menu-icon" onclick="togglemenu()">
+                </div>
+            </div>
+            <div class="container3">
+                <div class="navbar2">
+                    <nav>
+                        <ul id = "menuList">
+                            <li><a href="index.html">Vitamins/Supplements</a></li>
+                            <li><a href="salads.html"><u>Vegetable Salad</u></a></li>
+                            <li><a href="farm.html">Farm Quality Food Products</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="container4">
+                <div class="rows">
+                    <div class="column">
+                        <img src="images/CaesarSalad.png" alt="Caesar" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <img src="images/ColeslawSalad.png" alt="Coleslaw" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <img src="images/GreenSalad.png" alt="Green" style="width:100%">
+                    </div>
+                </div>
+                <div class="rows">
+                    <div class="column">
+                        <img src="images/WaldorfSalad.png" alt="Waldorf" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <img src="images/ChickenSalad.png" alt="Chicken" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <img src="images/Filler.jpg" alt="Filler" style="width:100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+            function togglemenu(){
+                if(menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight = "130px"
+                }
+                else
+                {
+                    menuList.style.maxHeight = "0px"
+                }
+            }
+        </script>
+    </body>
+</html>

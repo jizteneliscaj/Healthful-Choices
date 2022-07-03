@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Healthful Choices</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main1">
+            <div class="container1">
+                <div class="navbar">
+                    <img src="images/hcHeader.jpg" class="logo">
+                    <nav>
+                        <ul id = "menuList">
+                            <li><a href="index.html"><u>HOME</u></a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="services.html">SERVICES</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                    <img src="images/menuLogo.png" class="menu-icon" onclick="togglemenu()">
+                </div>
+            </div>
+            <div class="container3">
+                <div class="navbar2">
+                    <nav>
+                        <ul id = "menuList">
+                            <li><a href="index.html">Vitamins/Supplements</a></li>
+                            <li><a href="salads.html">Vegetable Salad</a></li>
+                            <li><a href="farm.html"><u>Farm Quality Food Products</u></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="container4">
+                <div class="rows">
+                    <div class="column">
+                        <img src="images/Eggs.png" alt="Eggs" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <img src="images/Kangkong.png" alt="Kangkong" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <img src="images/Lettuce.png" alt="Lettuce" style="width:100%">
+                    </div>
+                </div>
+                <div class="rows">
+                    <div class="column">
+                        <img src="images/Potato.png" alt="Potato" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <img src="images/GreenBeans.png" alt="GreenBeans" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <img src="images/Calamansi.png" alt="Calamansi" style="width:100%">
+                    </div>
+                </div>
+                <div class="rows">
+                    <div class="column">
+                        <img src="images/ChickenBreasts.png" alt="ChickenBreasts" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <img src="images/ShiitakeMushrooms.png" alt="ShiitakeMushrooms" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <img src="images/Ginger.png" alt="Ginger" style="width:100%">
+                    </div>
+                </div>
+                <div class="rows">
+                    <div class="column">
+                        <img src="images/Tomato.png" alt="Tomato" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <img src="images/CherryTomatoes.png" alt="CherryTomatoes" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <img src="images/Okra.png" alt="Okra" style="width:100%">
+                    </div>
+                </div>
+                <div class="rows">
+                    <div class="column">
+                        <img src="images/SpringOnions.png" alt="SpringOnions" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <img src="images/Salmon.png" alt="Salmon" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <img src="images/Filler.jpg" alt="Filler" style="width:100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+            function togglemenu(){
+                if(menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight = "130px"
+                }
+                else
+                {
+                    menuList.style.maxHeight = "0px"
+                }
+            }
+        </script>
+    </body>
+</html>
